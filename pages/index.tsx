@@ -110,7 +110,7 @@ const Home: NextPage = () => {
                                 </div>
 
                                 <div className={ styles.buttonFlex }> 
-                                    <div className={ styles.button }><a target="_blank" href='https://drive.google.com/file/d/15IFKEok9w_LYdaBRBwJWyLBz2sv5-GX8/view?usp=sharing'>{ translations.buttons.cv }</a></div> 
+                                    <div className={ styles.button }><a target="_blank" rel="noreferrer" href='https://drive.google.com/file/d/15IFKEok9w_LYdaBRBwJWyLBz2sv5-GX8/view?usp=sharing'>{ translations.buttons.cv }</a></div> 
                                 </div>
                             </div>
                         </div> 
@@ -169,7 +169,7 @@ const Home: NextPage = () => {
                                     <div>Monlau, Barcelona</div>
                                 </div>
 
-                                <div className={ styles.verify }><a target="_blank" href='https://drive.google.com/file/d/1a9hw-BHjcSARZBZ8DCG3AzHgLaY6cWgg/view?usp=sharing'>{ translations.verify }</a></div>
+                                <div className={ styles.verify }><a target="_blank" rel="noreferrer" href='https://drive.google.com/file/d/1a9hw-BHjcSARZBZ8DCG3AzHgLaY6cWgg/view?usp=sharing'>{ translations.verify }</a></div>
                             </div>
 
                             <div className={ styles.box }>
@@ -180,7 +180,7 @@ const Home: NextPage = () => {
                                     <div>Monlau, Barcelona</div>
                                 </div>
 
-                                <div className={ styles.verify }><a target="_blank" href='https://drive.google.com/file/d/1gMnu2VfkPgXxHtIAfp-ip5kV3rkurlxE/view?usp=sharing'>{ translations.verify }</a></div>
+                                <div className={ styles.verify }><a target="_blank" rel="noreferrer" href='https://drive.google.com/file/d/1gMnu2VfkPgXxHtIAfp-ip5kV3rkurlxE/view?usp=sharing'>{ translations.verify }</a></div>
                             </div>
                         </div>
 
@@ -252,7 +252,7 @@ const Home: NextPage = () => {
                                     }
                                 </div>
 
-                                <div className={ styles.button }><a target="_blank" href={ currentProject.data.url }>Github</a></div>
+                                <div className={ styles.button }><a target="_blank" rel="noreferrer" href={ currentProject.data.url }>Github</a></div>
                             </div>
 
                             <div className={ styles.right } onClick={() => {
