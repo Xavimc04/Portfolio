@@ -17,7 +17,7 @@
 .footer { 
   display: flex;
   flex: 1;
-  width: 80vw;
+  width: 100vw; 
   padding: 2rem 0; 
   color: white;
   justify-content: center;
@@ -197,6 +197,12 @@
   padding: 15px;
   color: whitesmoke;
   border-radius: 10px;
+  transition: .3s;
+}
+
+.squares .box:hover {
+  box-shadow: 0px 0px 10px #7979f4;
+  transition: .3s;
 }
 
 .squares .box .title {
@@ -226,6 +232,7 @@
 .squares .box .verify:hover { 
   color: white;
   transition: .5s;
+  box-shadow: 0px 0px 10px #7979f4;
 }
 
 .projects {
@@ -358,7 +365,7 @@
 }
 
 .secondBox .inline {
-  justify-content: end;
+  justify-content: end; 
 }
 
 .secondBox .inline div {
@@ -443,5 +450,14 @@
 
   .projects {
     display: none;
+  }
+
+  .contact {
+    flex-direction: column; 
+  } 
+
+  .contact .secondBox {
+    margin-top: 30px;
+    width: 100%; 
   }
 }

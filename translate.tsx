@@ -14,6 +14,8 @@ const Translations = [
             spain: 'España',
             since: 'Años de experiencia:  ',
             verify: 'Verificar',
+            prev: 'Anterior', 
+            post: 'Siguiente', 
             buttons: {
                 cv: 'Descargar CV', 
                 cert: 'Descargar certificaciones'
@@ -44,6 +46,8 @@ const Translations = [
                 cv: 'Download CV', 
                 cert: 'Download certificates'
             }, 
+            prev: 'Previous', 
+            post: 'Following',
             certs: {
                 smx: 'Microcomputer systems and networks', 
                 lserver: 'Introduction to Linux server', 

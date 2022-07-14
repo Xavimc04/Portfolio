@@ -16,7 +16,7 @@ const Skills = [
         label: 'Lua', 
         since: 2, 
         percent: 90, 
-        frameworks: ['FMCore (Own)']
+        frameworks: ['FMCore']
     }, 
     {
         label: 'Javascript', 
@@ -110,7 +110,7 @@ const Home: NextPage = () => {
                                 </div>
 
                                 <div className={ styles.buttonFlex }> 
-                                    <div className={ styles.button }>{ translations.buttons.cv }</div> 
+                                    <div className={ styles.button }><a target="_blank" href='https://drive.google.com/file/d/15IFKEok9w_LYdaBRBwJWyLBz2sv5-GX8/view?usp=sharing'>{ translations.buttons.cv }</a></div> 
                                 </div>
                             </div>
                         </div> 
@@ -128,8 +128,8 @@ const Home: NextPage = () => {
                                 </div>
 
                                 <div className={ styles.inline }>
-                                    <Mail className={ styles.icon } />
-                                    <div><a>xavimorellcampos@gmail.com</a></div>
+                                    <Social className={ styles.icon } />
+                                    <div><a href='https://twitter.com/xavimorell2004'>xavimorell2004</a></div>
                                 </div>
                             </div>
 
@@ -145,8 +145,8 @@ const Home: NextPage = () => {
                                 </div>
 
                                 <div className={ styles.inline }>
-                                    <div><a href='https://twitter.com/xavimorell2004'>xavimorell2004</a></div>
-                                    <Social className={ styles.icon } />
+                                    <div><a>xavimorellcampos@gmail.com</a></div>
+                                    <Mail className={ styles.icon } />
                                 </div>
                             </div>
                         </div>
@@ -159,8 +159,6 @@ const Home: NextPage = () => {
                                     <div>{ translations.since } 2</div>
                                     <div>Monlau, Barcelona</div>
                                 </div>
-
-                                <div className={ styles.verify }>{ translations.verify }</div>
                             </div>
 
                             <div className={ styles.box }>
@@ -171,7 +169,7 @@ const Home: NextPage = () => {
                                     <div>Monlau, Barcelona</div>
                                 </div>
 
-                                <div className={ styles.verify }><a href='https://drive.google.com/file/d/1a9hw-BHjcSARZBZ8DCG3AzHgLaY6cWgg/view?usp=sharing'>{ translations.verify }</a></div>
+                                <div className={ styles.verify }><a target="_blank" href='https://drive.google.com/file/d/1a9hw-BHjcSARZBZ8DCG3AzHgLaY6cWgg/view?usp=sharing'>{ translations.verify }</a></div>
                             </div>
 
                             <div className={ styles.box }>
@@ -182,7 +180,7 @@ const Home: NextPage = () => {
                                     <div>Monlau, Barcelona</div>
                                 </div>
 
-                                <div className={ styles.verify }><a href='https://drive.google.com/file/d/1gMnu2VfkPgXxHtIAfp-ip5kV3rkurlxE/view?usp=sharing'>{ translations.verify }</a></div>
+                                <div className={ styles.verify }><a target="_blank" href='https://drive.google.com/file/d/1gMnu2VfkPgXxHtIAfp-ip5kV3rkurlxE/view?usp=sharing'>{ translations.verify }</a></div>
                             </div>
                         </div>
 
@@ -237,7 +235,7 @@ const Home: NextPage = () => {
                                         data: Projects[Projects.length - 1]
                                     })
                                 }
-                            }}>Anterior</div>
+                            }}>{ translations.prev }</div>
 
                             <div className={ styles.center }>
                                 <div className={ styles.label }>{ currentProject.data.label }</div>
@@ -254,7 +252,7 @@ const Home: NextPage = () => {
                                     }
                                 </div>
 
-                                <div className={ styles.button }><a href={ currentProject.data.url }>Github</a></div>
+                                <div className={ styles.button }><a target="_blank" href={ currentProject.data.url }>Github</a></div>
                             </div>
 
                             <div className={ styles.right } onClick={() => {
@@ -271,7 +269,7 @@ const Home: NextPage = () => {
                                         data: Projects[0]
                                     })
                                 }
-                            }}>Siguiente</div>
+                            }}>{ translations.post }</div>
                         </div>
 
                         <div className={ styles.mobileProjects }>
